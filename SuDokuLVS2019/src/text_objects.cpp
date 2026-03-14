@@ -77,7 +77,7 @@ void setTextPosY(TextCharObject*textObj, Sint16 pos_y) {
     textObj->rect.y = pos_y;
 }
 
-#if defined(PSP)
+#if defined(PSP) || defined(__PS2__)
 
 #define TTF_RENDERTEXT TTF_RenderText_Blended
 void setTextCharWithOutline(const char *text, TTF_Font *font, SDL_Color text_color, SDL_Color outline_color, TextCharObject *textObj,

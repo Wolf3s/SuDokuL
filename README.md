@@ -47,6 +47,8 @@ Install devkitPro and SDL2 for Gamecube, rename `Makefile_gc` to `Makefile` and 
 Install VitaSDK, then build with CMake. I've included a `make_vita.sh` file for convenience once you have everything installed.
 #### PSP
 Install [psptoolchain](https://github.com/pspdev/psptoolchain), which should also come with SDL2, SDL2_image, SDL2_ttf, and SDL2_mixer (Linux or WSL is strongly recommended). Rename `Makefile_psp` to `Makefile` and move it out of the `Makefiles` directory into `SuDokuLVS2019`, then build with make.
+#### PS2
+Install the [PS2DEV](https://github.com/ps2dev/ps2dev) toolchain, which should also come with SDL2, SDL2_ttf, and SDL2_mixer (Linux or WSL is strongly recommended), then run sh `Makefiles/make_ps2.sh`.
 
 ## Credits
 Everything in this game is made by me except for the following assets:

@@ -97,7 +97,12 @@ elseif (VITA)
 		FILE sce_sys/livearea/contents/startup.png sce_sys/livearea/contents/startup.png
 		FILE sce_sys/livearea/contents/template.xml sce_sys/livearea/contents/template.xml
 	)
-
+elseif (PS2)
+	set(CMAKE_EXECUTABLE_SUFFIX .elf)
+	include_directories("${PS2SDK}/ports/include/SDL2")
+	target_link_libraries(sudokul ps2_drivers patches audsrv SDL2main SDL2_mixer freetype png z SDL2_ttf SDL2_image pad modplug xmp SDL2 atomic gskit dma dmakit debug  
+	config draw stdc++ m c)
+	add_compile_definitions(-DCONSOLE)
 else()
 	if (LINUX)
 		add_definitions(-DLINUX)

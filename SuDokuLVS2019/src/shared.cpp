@@ -269,7 +269,11 @@ void initDefaultBGScale() {
 }
 
 void initDefaultFrameRate() {
+#ifdef __PS2__
+	defaultFrameRateIndex = 2;
+#else
 	defaultFrameRateIndex = 5;
+#endif
 }
 
 void initDefaultWindowedSetting() {
